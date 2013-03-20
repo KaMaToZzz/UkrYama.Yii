@@ -267,6 +267,7 @@
 			Хостинг — «<noindex><a href="http://www.ukraine.com.ua/" target="_blank" rel="nofollow">Украина</a></noindex>»<br />
 			<span class="studio-copyright">Дизайн — веб-студия <a href="http://stfalcon.com"><span class="icon"></span>stfalcon.com</a></span>
 			Разработано в <noindex><a href="http://pixelsmedia.ru" rel="nofollow">Pixelsmedia</a> </noindex>на Yii.<br/>
+                        Поддержка сайта <noindex><a href="http://force-it.org" rel="nofollow">force-it.org</a></noindex>.<br/>
 			<a href="http://novus.org.ua/" style="background:none;" class="notus-logo" target="_blank"><img src="<?php echo Yii::app()->request->baseUrl;?>/images/logo-novus.png"></a>
 			</p>
 			
@@ -335,11 +336,11 @@
 	
 		</script>
 	<?endif?>
-		<div class="insape"><?php 
-			if (!defined('_SAPE_USER')){
-		   define('_SAPE_USER', 'f127747a52619313d55480e54fe0ca6a'); 
+		<div class="insape"><?php
+                        if (!defined('_SAPE_USER')){
+                            define('_SAPE_USER', 'f127747a52619313d55480e54fe0ca6a'); 
 			}
-			require_once($_SERVER['DOCUMENT_ROOT'].'/'._SAPE_USER.'/sape.php'); 
+			require_once($_SERVER['DOCUMENT_ROOT'].'/'._SAPE_USER.'/sape.php');
 			$o['charset'] = 'UTF-8';
 			$sape = new SAPE_client($o);
 			echo "<a href='http://ukryama.com/news/?ELEMENT_ID=431'>Реклама</a>: ";
